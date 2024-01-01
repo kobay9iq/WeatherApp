@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity"
+  android:orientation="vertical"
+  >
+
+  <LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+    <EditText
+      android:id="@+id/et"
+      android:layout_width="200dp"
+      android:layout_height="50dp"
+      android:hint="Enter City Name">
+    </EditText>
+    <Button
+      android:id="@+id/butt"
+      android:layout_width="75dp"
+      android:layout_height="50dp"
+      android:text="GO">
+    </Button>
+  </LinearLayout>
+
+  <ImageView
+    android:id="@+id/IV"
+    android:layout_width="150dp"
+    android:layout_gravity="center"
+    android:layout_margin="50dp"
+    android:layout_height="150dp">
+  </ImageView>
+
+
+  <TextView
+    android:id="@+id/cityName"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:text="Amsterdam"
+    android:textSize="30sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+  <TextView
+    android:layout_gravity="center"
+    android:textSize="20sp"
+    android:gravity="center_horizontal"
+    android:id="@+id/weatherInfo"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:text="Hello World!"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</LinearLayout>
